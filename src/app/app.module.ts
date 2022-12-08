@@ -8,7 +8,8 @@ import { Router, RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ViewComponent } from './view/view.component';
-import { SearchComponent } from './search/search.component'
+import { SearchComponent } from './search/search.component';
+import { NavComponent } from './nav/nav.component'
 
 const myRoute:Routes=[
   {
@@ -30,7 +31,8 @@ const myRoute:Routes=[
     AppComponent,
     AddComponent,
     ViewComponent,
-    SearchComponent
+    SearchComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
