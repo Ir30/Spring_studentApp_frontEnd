@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row m-5 p-5">
+                <h2 class="text-secondary text-center">Add Students</h2>
+                <hr>
+
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-3">
+                    <label for="" class="label-control">Name</label>
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-3">
+                    <label for="" class="label-control">Admission No</label>
+                    <input name="adm" [(ngModel)]="adm" type="text" class="form-control">
+                </div>
+
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-3">
+                    <label for="" class="label-control">Roll NO</label>
+                    <input name="roll_nO" [(ngModel)]="roll_nO" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-3">
+                    <label for="" class="label-control">Place</label>
+                    <input name="place" [(ngModel)]="place" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-3">
+                    <label for="" class="label-control">College</label>
+                    <input name="college" [(ngModel)]="college" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-3">
+                    <label for="" class="label-control">Age</label>
+                    <input name="age" [(ngModel)]="age" type="text" class="form-control">
+                </div>
+                
+                
+
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-3">
+                    <button class="btn btn-success" (click)="readValues()">Submit</button>
+                </div>
+
+
+
+                
+            </div>
+        </div>
+    </div>
+</div>
