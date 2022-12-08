@@ -7,7 +7,8 @@ import { AddComponent } from './add/add.component';
 import { Router, RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { ViewComponent } from './view/view.component'
+import { ViewComponent } from './view/view.component';
+import { SearchComponent } from './search/search.component'
 
 const myRoute:Routes=[
   {
@@ -17,6 +18,10 @@ const myRoute:Routes=[
   {
     path:"view",
     component:ViewComponent
+  },
+  {
+    path:"search",
+    component:SearchComponent
   }
 ]
 
@@ -24,7 +29,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AddComponent,
-    ViewComponent
+    ViewComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
