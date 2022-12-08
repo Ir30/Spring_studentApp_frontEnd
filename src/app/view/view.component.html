@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row m-5 p-5">
+                <h2 class="text-secondary text-center">Add Students</h2>
+                <hr>
+                <table class="table table-striped-columns">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Admission NO</th>
+                        <th scope="col">Roll No</th>
+                        <th scope="col">Place</th>
+                        <th scope="col">College</th>
+                        <th scope="col">Age</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let i of data">
+                        <td>{{i.name}}</td>
+                        <td>{{i.adm}}</td>
+                        <td>{{i.roll_nO}}</td>
+                        <td>{{i.place}}</td>
+                        <td>{{i.college}}</td>
+                        <td>{{i.age}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+</div>
