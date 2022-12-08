@@ -6,19 +6,25 @@ import { AppComponent } from './app.component';
 import { AddComponent } from './add/add.component';
 import { Router, RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ViewComponent } from './view/view.component'
 
 const myRoute:Routes=[
   {
     path:"",
     component:AddComponent
+  },
+  {
+    path:"view",
+    component:ViewComponent
   }
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddComponent
+    AddComponent,
+    ViewComponent
   ],
   imports: [
     BrowserModule,
