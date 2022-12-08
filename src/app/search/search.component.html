@@ -33,7 +33,12 @@
                         <td>{{i.place}}</td>
                         <td>{{i.college}}</td>
                         <td>{{i.age}}</td>
+                        <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-5">
+                            <button class="btn btn-danger" (click)="deleteValues(i.id)">Delete</button>
+                        </div>
                       </tr>
+
+                        
                     </tbody>
                   </table>
             </div>
