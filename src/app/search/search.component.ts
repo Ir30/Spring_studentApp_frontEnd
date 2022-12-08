@@ -27,4 +27,17 @@ export class SearchComponent {
     
   }
 
+  deleteValues=(id:any)=>{
+    let data:any={"id":id}
+    this.api.deleteStudent(data).subscribe(
+      (res:any)=>{
+        if (res.status=="success") {
+          alert("data deleted succesfully")
+        } else {
+          
+        }
+      }
+    )
+  }
+
 }
